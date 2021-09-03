@@ -2,6 +2,7 @@
     list-style-type: none;
     display: flex;
     color: #000;
+    margin-right: 10px;
 }
 
 #navigation{
@@ -33,10 +34,10 @@ html{
 }
 
 #about{
-    height: 800px;
-    background-color: lightseagreen;
+    height: 600px;
+    background-color: #CCC;
     margin: 10px;
-    padding: 250px;
+    padding: 150px;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -49,16 +50,30 @@ html{
 
 .icon{
     margin: 15px;
+    width: max-content;
+    height: max-content;
     font-size: xx-large;
 }
 
+.icon:hover{
+    color: steelblue;
+}
+
+.icon:active{
+    border-style: solid;
+    border-width: 2px;
+    border-color: steelblue;
+    border-radius: 5px;
+}
+
 #projects{
-    height: 800px;
+    height: 300px;
     text-align: center;
     vertical-align: middle;
     margin: 10px;
     padding: 100px;
-    background-color: royalblue;
+    background-color: #333;
+    color: white;
 }
 
 #pcards{
@@ -67,16 +82,18 @@ html{
 }
 
 .card{
+    color: black;
     margin: 25px;
 }
 
 #skills{
     height: 800px;
     margin: 10px;
-    background-color: lightseagreen;
+    background-color: #CCC;
     padding: 20px;
     text-align: center;
     padding : 200px;
+    padding-top: 125px;
 }
 
 #s-cards1{
@@ -90,9 +107,66 @@ html{
 }
 
 #contact{
-    height: 700px;
+    height: 100px;
     text-align: center;
-    margin: 10px;
-    background-color: royalblue;
-    padding : 350px;
+    vertical-align: middle;
+    padding: 20px;
+    margin: auto;
+    background-color: #333;
 }
+
+#skillsgroup{
+    text-align: left;
+    display: flex;
+    margin-top: 50px;
+}
+
+.skill{
+    margin: 20px;
+    width: 30%;
+}
+
+.skilltext{
+    color : #CCC;
+    margin-left: 10px;
+}
+
+.skill:hover .skilltext{
+    color: black ;
+}
+
+.stars{
+    display: flex;
+    color: #CCC;
+}
+
+.skill:hover .stars{
+    color: black; ;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    #about {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    #skills {
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 1250px;
+      }
+
+    #skillsgroup{
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+        margin-bottom: 0px;
+    }
+
+    .skill{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+  }
