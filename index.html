@@ -12,6 +12,9 @@
   <title>Rutuj Bafna</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script> -->
 </head>
 <style>
   body {
@@ -21,8 +24,10 @@
 
 <body>
   <div id="navigation">
-    <div></div>
-    <ul id="nav-list">
+    <div style="margin-left: 10px;"><button onclick="myFunction()" id="but1"> Dark Mode</button>
+      <button onclick="myFunction1()" style="display: none;" id="but2"> Regular Mode</button>
+    </div>
+      <ul id="nav-list">
       <li class="nav-item"><a href="#about" style="color: blue;"><b>About Me</b></a></li>
       <li class="nav-item"><a href="#projects" style="color: blue;"><b>Projects</b></a></li>
       <li class="nav-item"><a href="#skills" style="color: blue;"><b>Skills</b></a></li>
@@ -138,8 +143,36 @@
     <a href="https://www.linkedin.com/in/rutuj-bafna-a724501b5/" target="_blank" rel="noopener noreferrer"
       style="color: aliceblue;"><span class="icon ion-social-linkedin"></span></a>
   </div>
-  </div>
-  </div>
+
+  <script>
+    function myFunction() {
+      console.log("HI");
+       var element = document.getElementById("about");
+       element.style.color = "white";
+       element.style.backgroundColor = "#333";
+       var element1 = document.getElementById("skills");
+       element1.style.color = "white";
+       element1.style.backgroundColor = "#333";
+       var element = document.getElementById("but1");
+       element.style.display = "none";
+       var element = document.getElementById("but2");
+       element.style.display = "block";
+    }
+
+    function myFunction1() {
+      console.log("HI");
+       var element = document.getElementById("about");
+       element.style.color = "black";
+       element.style.backgroundColor = "#CCC";
+       var element1 = document.getElementById("skills");
+       element1.style.color = "black";
+       element1.style.backgroundColor = "#CCC";
+       var element = document.getElementById("but1");
+       element.style.display = "block";
+       var element = document.getElementById("but2");
+       element.style.display = "none";
+    }
+    </script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -152,6 +185,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
