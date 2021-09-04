@@ -144,6 +144,16 @@ html{
     color: black; ;
 }
 
+.change {
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 40%;
+    width: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+}
+
 
 
 @media only screen and (max-width: 800px) {
@@ -168,5 +178,12 @@ html{
     .skill{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    #but1{
+        display: none;
+    }
+    #but2{
+        display: none;
     }
   }
