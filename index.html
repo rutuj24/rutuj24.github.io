@@ -2,191 +2,324 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>School</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <title>Rutuj Bafna</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-    </script> -->
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<style>
-  body {
-    background-color: black;
-  }
-</style>
 
 <body>
-  <div id="navigation">
-    <div style="margin-left: 10px;">
-      <button type="button" onclick="myFunction()" id="but1" class="btn btn-primary">Dark Mode</button>
-      <button type="button" onclick="myFunction1()" id="but2" class="btn btn-primary" style="display: none;">Regular Mode</button>
-    </div>
-      <ul id="nav-list">
-      <li class="nav-item"><a href="#about" style="color: blue;"><b>About Me</b></a></li>
-      <li class="nav-item"><a href="#projects" style="color: blue;"><b>Projects</b></a></li>
-      <li class="nav-item"><a href="#skills" style="color: blue;"><b>Skills</b></a></li>
-      <li class="nav-item"><a href="#contact" style="color: blue;"><b>Contact Me</b></a></li>
-    </ul>
-  </div>
-  <div id="about">
-    <div>
-      <img src="images/1630560518790.jpg" height="300" width="250">
-    </div>
-    <div>
-      <div id="about-txt">
-        <h2><b>About Me</b></h2><br>
-        <p>Myself Rutuj Bafna.<br>I am a 2nd year CS student at Vishwakarma Institute of Technology
-          .<br>My hobbies are music, football and coding.<br> I live
-          in Pune</p>
-      </div>
-    </div>
-  </div>
-  <div id="projects">
-    <h2>My Projects</h2>
-    <p>Most of my projects have been uplaodded on github
-      .<br>You can check the projects <br>
-      by clicking 
-      <a href="https://github.com/rutuj24?tab=repositories" target="_blank" rel="noopener noreferrer" style="color: white;"><u>here.</u></a>
-    </p>
-  </div>
-  <div id="skills">
-    <h2 style="margin-bottom: 100px;">My Skills</h2>
-    <div id="skillsgroup">
-      <div class="skill">
-        <div>
-          <h3>HTML</h3>
+    <header>
+        <div class="my-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="nav-items">
+                        <div class="menu-toggle">
+                            <div class="menu-hamburger"></div>
+                        </div>
+                        <div class="logo">
+                            <img src="assets/images/technocrats/text-white.png" style="width: 250px; height: 50px;">
+                        </div>
+                        <div class="menu-items">
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#Outcomes">Outcomes</a></li>
+                                    <li><a href="#Registration">Registration</a></li>
+                                    <li><a href="#foot">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="stars">
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-        </div>
-        <div class="skilltext">Intermediate
-        </div>
-      </div>
-      <div class="skill">
-        <div>
-          <h3>CSS</h3>
-        </div>
-        <div class="stars">
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-        </div>
-        <div class="skilltext">Intermediate
-        </div>
-      </div>
-      <div class="skill">
-        <div>
-          <h3>JavaScript</h3>
-        </div>
-        <div class="stars">
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-        </div>
-        <div class="skilltext">Intermediate
-        </div>
-      </div>
-    </div>
-    <div id="skillsgroup">
-      <div class="skill">
-        <div>
-          <h3>Python</h3>
-        </div>
-        <div class="stars">
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-        </div>
-        <div class="skilltext">Intermediate
-        </div>
-      </div>
-      <div class="skill">
-        <div>
-          <h3>C++</h3>
-        </div>
-        <div class="stars">
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-        </div>
-        <div class="skilltext">Intermediate
-        </div>
-      </div>
-      <div class="skill">
-        <div>
-          <h3>Java</h3>
-        </div>
-        <div class="stars">
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-          <i class="ionicons ion-ios-star icon"></i>
-        </div>
-        <div class="skilltext">Intermediate</div>
-      </div>
-    </div>
-  </div>
-  <div id="contact">
-    <a href="https://github.com/rutuj24" target="_blank" rel="noopener noreferrer" style="color: aliceblue;"><span
-        class="icon ion-social-github"></span></a>
-    <a href="https://www.instagram.com/____baf____/" target="_blank" rel="noopener noreferrer"
-      style="color: aliceblue;"><span class="icon ion-social-instagram"></span></a>
-    <a href="https://www.facebook.com/rutuj.bafna.24/" target="_blank" rel="noopener noreferrer"
-      style="color: aliceblue;"><span class="icon ion-social-facebook"></span></a>
-    <a href="https://www.linkedin.com/in/rutuj-bafna-a724501b5/" target="_blank" rel="noopener noreferrer"
-      style="color: aliceblue;"><span class="icon ion-social-linkedin"></span></a>
-  </div>
+    </header>
+    <main>
+        <!-- ============Slider  Section  Start============ -->
+        <section class="slider" id="home">
+            <div class="shap"></div>
+            <div class="shap-01">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+                    <g id="Layer_1">
+                    </g>
+                    <g id="Layer_2">
+                        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="5.0576" y1="37.5" x2="69.9424" y2="37.5">
+                            <stop offset="0.35" style="stop-color:#EDF4F8" />
+                            <stop offset="0.439" style="stop-color:#F6FAFC" />
+                            <stop offset="0.5874" style="stop-color:#FDFEFE" />
+                            <stop offset="1" style="stop-color:#FFFFFF" />
+                        </linearGradient>
+                        <polygon fill="url(#SVGID_1_)"
+                            points="21.279,65.596 5.058,37.5 21.279,9.404 53.721,9.404 69.942,37.5 53.721,65.596 	" />
+                    </g>
+                </svg>
+            </div>
+            <div class="shap-02">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" width="30px" height="200px" viewBox="0 0 30 200" style="enable-background:new 0 0 30 200;"
+                    xml:space="preserve">
+                    <path style="fill:#FFFFFF;" d="M20.666,176.646C20.666,186.782,18.129,195,15,195l0,0c-3.129,0-5.667-8.218-5.667-18.354V23.352
+                	C9.333,13.217,11.871,5,15,5l0,0c3.129,0,5.666,8.217,5.666,18.352V176.646z" />
+                </svg>
+            </div>
+            <div class="shape-03"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="main-wrapper">
+                        <div class="sub-wrapper-01">
+                            <div class="content">
+                                <h1>Join Us For A Hands-On Workshop On ' Web Development !! '</h1>
+                                <p>Welcome to the official website for the Technocrats, VIT Pune's Web-development workshop. 
+                                    Here you'll find all the necessary information about the workshop.
+                                    Feel free to reach out to us at any time in case of any doubts regarding the same.</p>
+                                <div class="btn-01">
+                                    <ul>
+                                        <li><a href="tel:+918094077098">Contact Us</a></li>
+                                        <li><a target="_blank" href="https://www.instagram.com/vit_technocrats">Follow Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-wrapper-01">
+                            <div class="image">
+                                <div class="my-ba">
+                                    <img src="assets/images/slider/1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <script>
-    function myFunction() {
-      console.log("HI");
-       var element = document.getElementById("about");
-       element.style.color = "white";
-       element.style.backgroundColor = "#333";
-       var element1 = document.getElementById("skills");
-       element1.style.color = "white";
-       element1.style.backgroundColor = "#333";
-       var element = document.getElementById("but1");
-       element.style.display = "none";
-       var element = document.getElementById("but2");
-       element.style.display = "block";
-    }
+        <!-- ============bg-se-01  Section  Start============ -->
 
-    function myFunction1() {
-      console.log("HI");
-       var element = document.getElementById("about");
-       element.style.color = "black";
-       element.style.backgroundColor = "#CCC";
-       var element1 = document.getElementById("skills");
-       element1.style.color = "black";
-       element1.style.backgroundColor = "#CCC";
-       var element = document.getElementById("but1");
-       element.style.display = "block";
-       var element = document.getElementById("but2");
-       element.style.display = "none";
-    }
-    </script>
+        <section class="bg-se-01" id="Outcomes">
+            <div class="container">
+                <div class="row">
+                    <div class="heading">
+                        <h2>OUTCOMES OF THE COURSE</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-sm-2 order-2 order-md-0 order-lg-0 order-xl-0">
+                        <div class="main-card">
+                            <div class="sub-card">
+                                <img src="assets/images/bg/1.png">
+                            </div>
+                        </div>
+                    </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="main-card">
+                            <div class="content">
+                                <ol>
+                                    <li>
+                                        <h3>TECHNOLOGIES TAUGHT</h3>
+                                        <p>You will learn HTML, CSS, JS(Advanced), Bootstrap and Git by the end of this course.
+                                            All of these are commonly used front end technologies.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>RESPONSIVE WEBPAGES</h3>
+                                        <p>Make resposnsive web pages,
+                                            i.e pages which change according to the device.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>AESTHETIC DESIGNS</h3>
+                                        <p>Learn to add animations to the website to make it more interesting.
+                                            These will be covered in advances CSS and JS.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>DEPLOYMENT</h3>
+                                        <p>Learn how to deploy your pages using git and Github.
+                                            Also laern to buy domain for your website.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============bg-se-02  Section  Start============ -->
+
+        <section class="bg-se-02" id="Registration">
+            <div class="container">
+                <div class="row">
+                    <div class="heading">
+                        <h2>REGISTRATION PRICES</h2>
+                    </div>
+                </div>
+
+                <!-- <div class="row">
+
+                </div> -->
+                <div id="generic_price_table">
+                    <section class="container-fluid price-tab">
+                        <div class="container">
+                
+                            <!--BLOCK ROW START-->
+                            <div class="row price-row">
+                                <div class="col-md-6 col-12">
+                
+                                    <!--PRICE CONTENT START-->
+                                    <div class="generic_content clearfix">
+                
+                                        <!--HEAD PRICE DETAIL START-->
+                                        <div class="generic_head_price clearfix">
+                
+                                            <!--HEAD CONTENT START-->
+                                            <div class="generic_head_content clearfix">
+                
+                                                <!--HEAD START-->
+                                                <div class="head_bg"></div>
+                                                <div class="head">
+                                                    <span>FOR ONE</span>
+                                                </div>
+                                                <!--//HEAD END-->
+                
+                                            </div>
+                                            <!--//HEAD CONTENT END-->
+                
+                                            <!--PRICE START-->
+                                            <div class="generic_price_tag clearfix">
+                                                <span class="price">
+                                                    <span class="sign">₹</span>
+                                                    <span class="currency">99</span>
+                                                    <span class="cent">.00</span>
+                                                </span>
+                                            </div>
+                                            <!--//PRICE END-->
+                
+                                        </div>
+                                        <!--//HEAD PRICE DETAIL END-->
+                
+                                        <!--FEATURE LIST START-->
+                                        
+                                        <!--BUTTON START-->
+                                        <div class="generic_price_btn clearfix">
+                                            <a class="" target="_blank" href="https://rzp.io/l/webdevworkshop">REGISTER</a>
+                                        </div>
+                                        <!--//BUTTON END-->
+                
+                                    </div>
+                                    <!--//PRICE CONTENT END-->
+                
+                                </div>
+                
+                                
+                                <div class="col-md-6 col-12">
+                
+                                    <!--PRICE CONTENT START-->
+                                    <div class="generic_content clearfix">
+                
+                                        <!--HEAD PRICE DETAIL START-->
+                                        <div class="generic_head_price clearfix">
+                
+                                            <!--HEAD CONTENT START-->
+                                            <div class="generic_head_content clearfix">
+                
+                                                <!--HEAD START-->
+                                                <div class="head_bg"></div>
+                                                <div class="head">
+                                                    <span>FOR TWO</span>
+                                                </div>
+                                                <!--//HEAD END-->
+                
+                                            </div>
+                                            <!--//HEAD CONTENT END-->
+                
+                                            <!--PRICE START-->
+                                            <div class="generic_price_tag clearfix">
+                                                <span class="price">
+                                                    <span class="sign">₹</span>
+                                                    <span class="currency">149</span>
+                                                    <span class="cent">.00</span>
+                                                </span>
+                                            </div>
+                                            <!--//PRICE END-->
+                
+                                        </div>
+                                       
+                                        <div class="generic_price_btn clearfix">
+                                            <a class="" target="_blank" href="https://rzp.io/l/webdevworkshoptwo">REGISTER</a>
+                                        </div>
+                                        <!--//BUTTON END-->
+                
+                                    </div>
+                                    <!--//PRICE CONTENT END-->
+                
+                                </div>
+                            </div>
+                            <!--//BLOCK ROW END-->
+                
+                        </div>
+                    </section>
+                
+                </div>
+            </div>
+        </section>
+
+    <!-- ============Footer  Start============ -->
+
+    <footer>
+        <div class="container" id="foot">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="_kl_de_w">
+                        <img src="assets/images/technocrats/logo-white2.png">
+                    </div>
+                </div>
     
+    
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="_kl_de_w">
+                        <h3>Contact Us</h3>
+                        <h6>Harsh Assawa:</h6>
+                        <h6>harsh.assawa19@vit.edu</h6>
+                        <h6>+91 97662 28771</h6><br>
+                        <h6>Videhi Bavishi</h6>
+                        <h6>videhi.bavishi19@vit.edu</h6>
+                        <h6>+91 72760 83110</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="end-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="last-card">
+                        <p>TECHNOCRATS   VIT   PUNE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/plugins/owl.carousel.js"></script>
+<script src="assets/js/plugins/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
 </html>
